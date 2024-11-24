@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "265617068882",
+    "project_id": "imagelabelingapp-30973",
+    "storage_bucket": "imagelabelingapp-30973.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265617068882:android:a854291bddac46c642208b",
+        "android_client_info": {
+          "package_name": "com.example.imageLabelingApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASBXs1rzxUQ-kX2jgeKrUq9zaZsZ0nmtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265617068882:android:cbcb1b69ebaf70bf42208b",
+        "android_client_info": {
+          "package_name": "com.example.image_labeling_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASBXs1rzxUQ-kX2jgeKrUq9zaZsZ0nmtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

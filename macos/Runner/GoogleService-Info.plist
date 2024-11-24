@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAW_rGq1Ve7PfcwkOQlWiQ8nKPMZ3iC3Ag</string>
+	<key>GCM_SENDER_ID</key>
+	<string>265617068882</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.imageLabelingApp</string>
+	<key>PROJECT_ID</key>
+	<string>imagelabelingapp-30973</string>
+	<key>STORAGE_BUCKET</key>
+	<string>imagelabelingapp-30973.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:265617068882:ios:863f4a94d6e5d28342208b</string>
+</dict>
+</plist>

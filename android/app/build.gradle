@@ -1,0 +1,59 @@
+plugins {
+    id "com.android.application"
+    id "com.google.gms.google-services" // Firebase configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Flutter plugin
+}
+
+android {
+    namespace = "com.example.imageLabelingApp"
+    compileSdk = 34 // Latest supported SDK
+
+    defaultConfig {
+        applicationId = "com.example.image_labeling_app"
+        minSdk = 21
+        targetSdk = 34 // Match compileSdk
+        versionCode = 1
+        versionName = "1.0"
+
+        // Enable buildConfig fields
+        buildFeatures {
+            buildConfig = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true // Enable code shrinking for production
+            shrinkResources true // Remove unused resources
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug // Replace with release signing config for production
+        }
+        debug {
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:31.2.3') // Firebase BOM for consistent versioning
+    implementation 'com.google.firebase:firebase-ml-modeldownloader:22.0.0' // Compatible Firebase ML library
+    implementation 'com.google.mlkit:image-labeling:17.0.5' // ML Kit library
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.21"
+}
+
+// Apply Google Services plugin for Firebase
+apply plugin: 'com.google.gms.google-services'
